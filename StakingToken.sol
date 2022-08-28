@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract StakingToken is ERC20, ERC1155Holder, Ownable{
+contract StakingERC1155 is ERC20, ERC1155Holder, Ownable{
     IERC1155 public token;
     mapping(uint256 => address) public tokenOwnerOf; // who's the owner of each tokenId
     mapping(uint256 => uint256) public tokenStakedAtTime; // time at which token was staked
