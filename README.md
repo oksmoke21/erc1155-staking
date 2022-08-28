@@ -9,3 +9,4 @@ Steps to use smart contract-
 5. Call the setApprovalForAll function in TokenERC1155, with fields: operator = StakingERC1155 contract's address, approved = true.
 6. ERC1155 tokens minted in TokenERC1155 can now be staked and unstaked by their owner in StakingERC1155 contract.
 7. Users can stake and unstake tokens as a single entity or as a batch, as is facilitated by the novelty of ERC1155 tokens.
+8. Users can call function calculateTokens to calculate the ERC20 tokens that will be received upon unstaking their tokens based upon the staked time by passing the required token's tokenId as function parameter
